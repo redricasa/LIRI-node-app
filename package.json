@@ -1,0 +1,20 @@
+{
+  "name": "LIRI-node-app",
+  "version": "1.0.0",
+  "description": "LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. LIRI node app is a Command Line Interface(CLI) application.  ## Role in App development: This is an individual project with no contributors ## Techonologies Used: - Axios - moment - DotEnv - Node-Spotify-API - Node.js - JavaScript ## How the app works(Screen-Shots):",
+  "main": "LIRI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redricasa/LIRI-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redricasa/LIRI-node-app/issues"
+  },
+  "homepage": "https://github.com/redricasa/LIRI-node-app#readme"
+}
