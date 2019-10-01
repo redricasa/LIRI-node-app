@@ -1,9 +1,12 @@
 require("dotenv").config();
 //require files and npm modules here first
-var keys = require("./keys.js");
-var Spotify = require('node-spotify-api');
+const keys = require("./keys.js");
+const Spotify = require('node-spotify-api');
+const axios = require('axios');
+const moment = require('moment');
+moment().format();
 //gets id and secret from keys.js files
-var spotify = new Spotify(keys.spotify);
+const spotify = new Spotify(keys.spotify);
 //spotify API request with a promise
 spotify
 .search({ type: 'track', query: 'All the Small Things', limit:5 })
