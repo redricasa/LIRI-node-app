@@ -8,15 +8,29 @@ moment().format();
 //gets id and secret from keys.js files
 const spotify = new Spotify(keys.spotify);
 //spotify API request with a promise
-spotify
-.search({ type: 'track', query: 'All the Small Things', limit:5 })
-.then(function(response) {
-    console.log(response);
-})
-.catch(function(err) {
-    console.log(err);
-});
+var artistNames = function(artist){
+    return artist.name;
+}
+var spotifySong = function(songTitle){
+//     Artist(s) --.artists
+// The song's name
+// A preview link of the song from Spotify
+// The album that the song is from-- .name
+    spotify
+    .search({ type: 'track', query:'kinfolk', limit:5 })
+    .then(function(response) {
+        //*break object down through a loop 
+        var firstItem = response.tracks.items[0]
+        console.log("Song name:"+firstItem.name); console.log("-------------------------")
+        console.log("Artists: "+firstItem.artists[0].name); console.log("-------------------------")
+        console.log("Artists: "+firstItem); console.log("-------------------------")
+        console.log("Artists: "+firstItem); console.log("-------------------------")
 
+    })
+    .catch(function(err) {
+        console.log(err);
+    });
+}
 //switch cases to hold the different commands from user
 var choose = function (caseData, functionData){
     switch(caseData) {
@@ -24,7 +38,7 @@ var choose = function (caseData, functionData){
             //insert call back 
             break;
         case 'spotify-this-song':
-            //insert call back
+            spotifySong();
             break;
         case 'movie-this':
             //insert call back
