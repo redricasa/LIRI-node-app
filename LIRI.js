@@ -21,10 +21,10 @@ var spotifySong = function(songTitle){
     .then(function(response) {
         //*break object down through a loop 
         var firstItem = response.tracks.items[0]
-        console.log("Song name:"+firstItem.name); console.log("-------------------------")
+        console.log("Song name: "+firstItem.name); console.log("-------------------------")
         console.log("Artists: "+firstItem.artists[0].name); console.log("-------------------------")
-        console.log("Artists: "+firstItem); console.log("-------------------------")
-        console.log("Artists: "+firstItem); console.log("-------------------------")
+        console.log("Preview Link of song: "); console.log("-------------------------")
+        console.log("Album the song is from: "+firstItem.album.name); console.log("-------------------------")
 
     })
     .catch(function(err) {
