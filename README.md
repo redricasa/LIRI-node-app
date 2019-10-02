@@ -20,4 +20,7 @@ This is an individual project with no contributors
 
 
 ## Next Steps:
-If you want to clone this app from github and run it youselves, you would need to supply your own .env file for it to work.
+- read up in bands in town API documentation to be able to limit results to 3 instead of the default of getting all the concerts the artist has in the future
+## Installation: 
+>If you want to clone this app from github and run it youselves, you would need to supply your own .env file for it to work.
+
