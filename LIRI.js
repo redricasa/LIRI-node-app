@@ -12,20 +12,18 @@ var artistNames = function(artist){
     return artist.name;
 }
 var spotifySong = function(songTitle){
-//     Artist(s) --.artists
-// The song's name
-// A preview link of the song from Spotify
-// The album that the song is from-- .name
     spotify
-    .search({ type: 'track', query:'kinfolk', limit:5 })
+    .search({ type: 'track', query:'kinfolk', limit: 5 })
     .then(function(response) {
-        //*break object down through a loop 
-        var firstItem = response.tracks.items[0]
-        console.log("Song name: "+firstItem.name); console.log("-------------------------")
-        console.log("Artists: "+firstItem.artists[0].name); console.log("-------------------------")
-        console.log("Preview Link of song: "); console.log("-------------------------")
-        console.log("Album the song is from: "+firstItem.album.name); console.log("-------------------------")
-
+        var firstItem = response.tracks.items; 
+        // *break object down through a loop
+        for(var i=0;i<firstItem.length; i++){
+            console.log("Song # "+ i)    
+            console.log("Song name: "+firstItem[i].name); console.log("-------------------------")
+            console.log("Artists: "+firstItem[i].artists[0].name); console.log("-------------------------")
+            console.log("Preview Link of song: "+ firstItem[i].preview_url); console.log("-------------------------")
+            console.log("Album the song is from: "+firstItem[i].album.name); 
+        }
     })
     .catch(function(err) {
         console.log(err);
