@@ -72,14 +72,20 @@ var movies = function(movieName){
 }
 var doThis = function(){
     fs.readFile('random.txt', 'utf8', function(err, data){
-        console.log(data);
+        var split = data.split(",");
+        if (split.length == 2){
+            console.log(split[0], split[1]);
+            //take split[0], split[1] and run node on command line as process.argv[2] and process.argv[3]
+        }else if(split.length == 1){
+            // take (split[0]) and run node on command line as process.argv[2];
+        }
     });
 };
 //switch cases to hold the different commands from user
 var choose = function (caseData, functionData){
     switch(caseData) {
         case 'do-what-it-says':
-            doThis(); 
+            doThis(caseData, functionData); 
             break;
         case 'spotify-this-song':
             spotifySong(functionData);
