@@ -30,7 +30,7 @@ var spotifySong = function(songTitle){
     });
 }
 var bands = function(artistName){
-    var concertQuery = "https://rest.bandsintown.com/artists/"+ artistName +"/events?app_id=codingbootcamp";
+    var concertQuery = "https://rest.bandsintown.com/artists/"+ artistName +"/events/?app_id=codingbootcamp";
     axios.get(concertQuery)
     .then(function(bandResponse){
         var bandItem = bandResponse.data;

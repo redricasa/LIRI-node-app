@@ -17,7 +17,11 @@ This is an individual project with no contributors
 - Node.js
 - JavaScript
 ## How the app works(Screen-Shots):
-
+- `do-what-it-says` 
+![do-what-it-says](/screen-Shots/do_what_it_says.png)
+- `movie-this`
+- `concert-this`
+- `spotify-this-song`
 
 ## Next Steps:
 - read up in bands in town API documentation to be able to limit results to 3 instead of the default of getting all the concerts the artist has in the future
