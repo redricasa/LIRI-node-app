@@ -51,7 +51,6 @@ var movies = function(movieName){
     axios.get(movieQuery)
     .then(function(movieResponse){
         var movieItem = movieResponse.data;
-        console.log(movieItem);
         console.log("Title of the movie: "+ movieItem.Title);
         console.log("________________________");
         console.log("Year the movie came out: "+ movieItem.Year);
