@@ -18,20 +18,40 @@ This is an individual project with no contributors
 - JavaScript
 ## How the app works(Screen-Shots):
 - `do-what-it-says` 
+Using the `fs` Node package, LIRI will take the text inside of `random.txt` and then use it to call one of LIRI's commands.
 ![do-what-it-says](/screen-Shots/do_what_it_says.png)
 - `movie-this`
+This will output the following information to your terminal/bash window:
+   * Title of the movie.
+   * Year the movie came out.
+   * IMDB Rating of the movie.
+   * Rotten Tomatoes Rating of the movie.
+   * Country where the movie was produced.
+   * Language of the movie.
+   * Plot of the movie.
+   * Actors in the movie.
+
 ![movie-this](/screen-Shots/moive_this.png)
 - `concert-this`
 This will search the Bands in Town Artist Events API `("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")` for an artist and render the following information about each event to the terminal:
-- Name of the venue
-Venue location
-Date of the Event (use moment to format this as "MM/DD/YYYY")
+* Name of the venue
+* Venue location
+* Date of the Event 
 ![concert-this](/screen-Shots/concert.png)
+
 - `spotify-this-song`
+This will show the following information about the song in your terminal/bash window:
+* Artist(s)
+* The song's name
+* A preview link of the song from Spotify
+* The album that the song is from
 ![spotify-this-song](/screen-Shots/spotify_this_song.png)
 
 ## Next Steps:
 - read up in bands in town API documentation to be able to limit results to 3 instead of the default of getting all the concerts the artist has in the future
+- have default entries for when the user doesn't type an entry after the command
 ## Installation: 
+>Git clone the repo into your device.
+>run the LIRI.js file in the terminal.
 >If you want to clone this app from github and run it youselves, you would need to supply your own .env file for it to work.
 
