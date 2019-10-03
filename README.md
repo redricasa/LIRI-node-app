@@ -22,6 +22,10 @@ This is an individual project with no contributors
 - `movie-this`
 ![movie-this](/screen-Shots/moive_this.png)
 - `concert-this`
+This will search the Bands in Town Artist Events API `("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")` for an artist and render the following information about each event to the terminal:
+- Name of the venue
+Venue location
+Date of the Event (use moment to format this as "MM/DD/YYYY")
 ![concert-this](/screen-Shots/concert.png)
 - `spotify-this-song`
 ![spotify-this-song](/screen-Shots/spotify_this_song.png)
