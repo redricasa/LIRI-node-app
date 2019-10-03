@@ -17,16 +17,16 @@ var spotifySong = function(songTitle){
         for(var i=0;i<firstItem.length; i++){
             console.log("Song # "+ i)    
             console.log("Song name: "+firstItem[i].name); 
-            console.log("-------------------------")
+            console.log("________________________")
             console.log("Artists: "+firstItem[i].artists[0].name);
-             console.log("-------------------------")
+             console.log("________________________")
             console.log("Preview Link of song: "+ firstItem[i].preview_url); 
-            console.log("-------------------------")
+            console.log("________________________")
             console.log("Album the song is from: "+firstItem[i].album.name); 
         }
     })
-    .catch(function(err) {
-        console.log(err);
+    .catch(function(error) {
+        console.log(error);
     });
 }
 var bands = function(artistName){
@@ -74,10 +74,10 @@ var doThis = function(){
     fs.readFile('random.txt', 'utf8', function(err, data){
         var split = data.split(",");
         if (split.length == 2){
-            console.log(split[0], split[1]);
+            choose(split[0], split[1]);
             //take split[0], split[1] and run node on command line as process.argv[2] and process.argv[3]
         }else if(split.length == 1){
-            // take (split[0]) and run node on command line as process.argv[2];
+            choose(split[0]) 
         }
     });
 };
@@ -85,7 +85,7 @@ var doThis = function(){
 var choose = function (caseData, functionData){
     switch(caseData) {
         case 'do-what-it-says':
-            doThis(caseData, functionData); 
+            doThis(); 
             break;
         case 'spotify-this-song':
             spotifySong(functionData);
