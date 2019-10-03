@@ -20,8 +20,11 @@ This is an individual project with no contributors
 - `do-what-it-says` 
 ![do-what-it-says](/screen-Shots/do_what_it_says.png)
 - `movie-this`
+![movie-this](/screen-Shot/movie_this.png)
 - `concert-this`
+![concert-this](/screen-Shots/do_what_it_says.png)
 - `spotify-this-song`
+![do-what-it-says](/screen-Shots/.png)
 
 ## Next Steps:
 - read up in bands in town API documentation to be able to limit results to 3 instead of the default of getting all the concerts the artist has in the future
