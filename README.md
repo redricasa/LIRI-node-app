@@ -31,7 +31,7 @@ This will output the following information to your terminal/bash window:
    * Plot of the movie.
    * Actors in the movie.
 
-![movie-this](/screen-Shots/moive_this.png)
+![movie-this](/screen-Shots/movie-this.jpg)
 - `concert-this`
 This will search the Bands in Town Artist Events API `("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")` for an artist and render the following information about each event to the terminal:
 * Name of the venue
